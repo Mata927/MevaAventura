@@ -1,0 +1,44 @@
+body{
+    background-color: #7D8F97 ;
+    margin-top:-0;
+    margin-left: -0;
+    margin-right: -0;
+}
+div.arriba{
+    background-color: #9A8AFF;
+    padding-top: 30px;
+    
+    
+}
+nav a {
+    text-decoration:none;
+    color:inherit;
+    font-size:25px;
+    font-family:Redressed;
+
+}
+nav li{
+    display:inline-block;
+    padding:5px 10px;
+    text-align:center;
+    color:black;
+    position:relative;
+    font-family:Redressed;
+}
+
+nav li:hover{
+    background-color:#fff;
+    color:blue;
+    }
+
+div.medio{
+    padding-left: 510px;
+
+}
+
+@font-face {
+    font-family:Redressed;
+    src: url('Redressed.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+ }

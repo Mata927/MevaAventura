@@ -1,5 +1,5 @@
 body{
-    background-color: #7D8F97 ;
+    background-image: url(8c8b1c15265fe40a60fc474e216be827.jpg) ;
     margin-top:-0;
     margin-left: -0;
     margin-right: -0;
@@ -17,7 +17,6 @@ div.arriba{
     padding-top: 160px;
   }
 
-
 @font-face {
     font-family:Redressed;
     src: url('Redressed.ttf') format("truetype");
@@ -26,11 +25,13 @@ div.arriba{
  }
 
  div.cuadro{
-    border-style: solid;
-    border-color: black;
+
+    border-radius: 20px;
     margin-left: 200px;
     margin-right: 200px;
-    background-color: white;
+    background-image: url(215-2156558_sobre-de-carta-en-espaol-hd-png-download.jpg);
+    background-repeat: no-repeat;
+    background-size: 1112px 500px;
     height: 500px;
     margin-top: 40px;
   }
@@ -44,6 +45,7 @@ width: 400px;
 height: 100px;
 margin-left: 160px;
 margin-right: 160px;
+border-radius: 20px;
 
 
 }

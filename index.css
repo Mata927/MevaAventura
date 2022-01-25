@@ -7,7 +7,7 @@ body{
 div.arriba{
     background-color: #9A8AFF;
     padding-top: 15px;
-       
+    text-align: center;
 }
 .text{
     text-align: center;
@@ -17,14 +17,6 @@ div.arriba{
     padding-top: 160px;
   }
 
-
-p{
-    font-size: 35px;
-    font-family:Redressed;
-    padding-left: 20px;
-    color: white;
-    text-align: center;
-}
 
 @font-face {
     font-family:Redressed;
@@ -40,6 +32,7 @@ p{
     margin-right: 200px;
     background-color: white;
     height: 500px;
+    margin-top: 40px;
   }
  
   footer{
@@ -59,3 +52,18 @@ margin-right: 160px;
 font-family: Redressed;
 color: black;
  }
+
+ nav li{
+    display:inline-block;
+    padding:5px 10px;
+    color:white;
+    position:relative;
+    font-family:Redressed;
+}
+
+nav a {
+    text-decoration:none;
+    color:inherit;
+    font-size:40px;
+    font-family:Redressed;
+}

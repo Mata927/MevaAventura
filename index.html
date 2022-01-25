@@ -5,17 +5,82 @@
         <link href="index.css" rel="stylesheet">
     </head>
     <body>
-        <div class="arriba">
-            <nav>
-            <div class="titulo">
-            <li><p>Tria la meva aventura</p></li>
+        <title>La teva aventura</title>
+    </head>
+    <body>
+        <header>
+            <div class="arriba">
+                <nav>
+                <div class="titulo">
+                <li><p>Tria la teva aventura</p></li>
+                </div>
+               </nav>
             </div>
-           </nav>
-        </div>
-            <br>
-            <br>
-            <br>
-            <div class="foto">
-        <img src="http://universidadesemprendedoras.tecnocampus.cat/wp-content/uploads/sites/16/2019/03/logo-tecnocmapus.jpg" width="350" height="250"></div>
+        </header>
+        <main>
+            <div class="cuadro">
+            <section class="text"></section>
+            </div>
+            <footer>
+                <button onclick="ferSi()"><p class="p">Sí</p></button>
+                <button onclick="ferNo()"><p class="p">No</p></button>
+            </footer>
+        </main>
+
+        <script>
+            const historia = [
+                {text:"Benvingut a la teva aventura,vols participar?",
+                si : 1,
+                no : 7,},
+
+                {text:"El meu amic s'ha amagat,Vols buscar amb mi el meu amic 'S/N' ?",
+                si : 2,
+                no : 7,},
+                { text: "Ara entrem a casa i trobem un armari. Trobem algu en el armari? ",
+                si: 3,
+                no: 1,},
+                {
+                 text: "Vam trobar la empremta a la porta, i quan miras desde la porta del amari es veu unes pijades de fang que van cap la cuina.Trobem algu a la cuina?",
+                si: 4,
+                no: 2,
+                },
+                {
+                text: "Vam trobar un cabell del meu amic,pero despres vam anar al meu cuarto.Trobem algu a la meva Habitacio?",
+                si: 5,
+                no: 3,
+                },
+                {
+                text: "Vam olora la seva colonia. Trobarem alu a baix del meu llit?",
+                si: 6,
+                no: 4,
+                },
+                {
+                text: "Hem trobat el meu amic",
+                si: 8,
+                no: null,
+                },
+                
+                { text: "Vaya ayuda,Vaya companyarisme" },
+                {text : "Moltes Gracies"},
+
+                
+];
+            let pagina = 0;
+            let text = document.querySelector('.text');
+            text.textContent = historia[pagina].text;
+
+            function ferSi() {
+            
+                    pagina = historia[pagina].si;
+                text.textContent = historia[pagina].text;
+        
+            }
+            function ferNo() {
+                
+                    pagina = historia[pagina].no;
+                text.textContent = historia[pagina].text;
+                
+            }
+        </script>
     </body>
 </html>

@@ -6,34 +6,24 @@ body{
 }
 div.arriba{
     background-color: #9A8AFF;
-    padding-top: 30px;
-    
-    
+    padding-top: 15px;
+       
 }
-nav a {
-    text-decoration:none;
-    color:inherit;
-    font-size:25px;
+.text{
+    text-align: center;
+    font-size: 60px;
+    font-family: Redressed;
+    color: black;
+    padding-top: 160px;
+  }
+
+
+p{
+    font-size: 35px;
     font-family:Redressed;
-
-}
-nav li{
-    display:inline-block;
-    padding:5px 10px;
-    text-align:center;
-    color:black;
-    position:relative;
-    font-family:Redressed;
-}
-
-nav li:hover{
-    background-color:#fff;
-    color:blue;
-    }
-
-div.medio{
-    padding-left: 510px;
-
+    padding-left: 20px;
+    color: white;
+    text-align: center;
 }
 
 @font-face {
@@ -41,4 +31,31 @@ div.medio{
     src: url('Redressed.ttf') format("truetype");
     font-weight: normal;
     font-style: normal;
+ }
+
+ div.cuadro{
+    border-style: solid;
+    border-color: black;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: white;
+    height: 500px;
+  }
+ 
+  footer{
+    padding-top: 40px;
+    text-align: center;
+  }
+button{
+width: 400px;
+height: 100px;
+margin-left: 160px;
+margin-right: 160px;
+
+
+}
+ p.p{
+     font-size: 35px;
+font-family: Redressed;
+color: black;
  }

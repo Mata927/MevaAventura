@@ -11,8 +11,7 @@
         <header>
             <div class="arriba">
                 <nav>
-
-                <li><a href="index.html">Tria la teva aventura</a></li>
+                <li><a>Tria la teva aventura</a></li>
                </nav>
             </div>
         </header>
@@ -21,8 +20,22 @@
             <section class="text"></section>
             </div>
             <footer>
+                <div id="botoncomençar" style="display: none;"> 
+                    <button onclick="ferComençar()"><p class="p">Començar</p></button>
+                    </div>
+                <div id="botonSi"> 
                 <button onclick="ferSi()"><p class="p">Sí</p></button>
+                </div>
+                <div id="botonNo"> 
                 <button onclick="ferNo()"><p class="p">No</p></button>
+                </div>
+                <div id="boton" style="display: none;" >
+                    <form method="get" action="index.html">
+                        <button onclick="acabar()"><p class="p">Acabat</p></button>
+                    </form>
+                    
+                
+            </div>
             </footer>
         </main>
 
@@ -30,55 +43,103 @@
             const historia = [
                 {text:"Benvingut a la teva aventura,vols participar?",
                 si : 1,
-                no : 7,},
+                no : 7,
+                },
 
                 {text:"El meu amic s'ha amagat,Vols buscar amb mi el meu amic 'S/N' ?",
                 si : 2,
-                no : 7,},
+                no : 7,
+                },
                 { text: "Ara entrem a casa i trobem un armari. Trobem algu en el armari? ",
                 si: 3,
-                no: 1,},
+                no: 1,
+                },
                 {
                  text: "Vam trobar la empremta a la porta, i quan miras desde la porta del amari es veu unes pijades de fang que van cap la cuina.Trobem algu a la cuina?",
                 si: 4,
                 no: 2,
+                
                 },
                 {
                 text: "Vam trobar un cabell del meu amic,pero despres vam anar al meu cuarto.Trobem algu a la meva Habitacio?",
                 si: 5,
                 no: 3,
+                
                 },
                 {
                 text: "Vam olora la seva colonia. Trobarem alu a baix del meu llit?",
                 si: 6,
                 no: 4,
+                
                 },
                 {
                 text: "Hem trobat el meu amic",
                 si: 8,
                 no: null,
+                
+    
                 },
                 
-                { text: "Vaya ayuda,Vaya companyarisme" },
-                {text : "Moltes Gracies"},
+                { text: "Vaya ayuda,Vaya companyarisme",acabar : 0 },
+                {text : "Moltes Gracies",acabar :0},  
+            ];
 
-                
-];
             let pagina = 0;
             let text = document.querySelector('.text');
             text.textContent = historia[pagina].text;
 
+          
+
             function ferSi() {
                 pagina = historia[pagina].si;
                 text.textContent = historia[pagina].text;
-        
+            
+                na();
+                na2();
+                
+                
+
             }
+
             function ferNo() {
-                
-                    pagina = historia[pagina].no;
+                pagina = historia[pagina].no;
                 text.textContent = historia[pagina].text;
+                na1();
+                
+            
                 
             }
+            
+            function acabar() {
+                document.getElementById("botonNo").style.display="block";
+                document.getElementById("botonSi").style.display="block";
+                document.getElementById("boton").style.display="none";
+                
+               }
+                    function na(){
+                        if(pagina===8){
+                document.getElementById("botonNo").style.display="none";
+                document.getElementById("botonSi").style.display="none";
+                document.getElementById("boton").style.display="block";
+
+                    }
+                }
+                function na1(){
+                    if(pagina===7){
+                document.getElementById("botonNo").style.display="none";
+                document.getElementById("botonSi").style.display="none";
+                document.getElementById("boton").style.display="block";
+
+                    }
+                }
+                function na2(){
+                    if(pagina===6){
+                    document.getElementById("botonNo").style.display="none";
+                document.getElementById("botonSi").style.display="block";
+
+                }
+            }
+
         </script>
     </body>
 </html>
